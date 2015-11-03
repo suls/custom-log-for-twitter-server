@@ -33,7 +33,7 @@ trait MyLogging extends Logging {
           level = level,
           formatter = new Formatter(
             timezone = Some("UTC")
-            ,prefix = "%.3s [<yyyy-MM-dd HH:mm:ss.SSS>] %s: "
+            ,prefix = "<yyyy-MM-dd HH:mm:ss.SSS> [%.3s] %s: "
           )
         )
     //  if (asyncFlag())
